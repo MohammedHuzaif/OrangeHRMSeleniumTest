@@ -5,7 +5,9 @@ import pageobjects.BookAFreeDemoPage.BookAFreeDemoPage;
 import pageobjects.GoogleCaptcha.GoogleCaptcha;
 import pageobjects.homepage.OrangeHRHomepage;
 import org.testng.annotations.Test;
+import org.testng.annotations.Listeners;
 
+@Listeners(listeners.TestNGListener.class)
 public class OrangeHRHomepageTests extends BaseTest {
 
     @Test

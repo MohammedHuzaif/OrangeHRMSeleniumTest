@@ -63,14 +63,14 @@
         </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-core</artifactId>
-            <version>2.17.2</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
             <version>2.17.2</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.17.2</version>
         </dependency>
         <dependency>
             <groupId>com.aventstack</groupId>
@@ -83,50 +83,60 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.3</version>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.20</version>
                 <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
-                    <encoding>UTF-8</encoding>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-failsafe-plugin</artifactId>
-                <version>3.0.0</version>
-                <configuration>
-                    <includes>
-                        <include>**/Test*.java</include>
-                        <include>**/*Test.java</include>
-                        <include>**/*Tests.java</include>
-                        <include>**/*Scenario.java</include>
-                        <include>**/*Scenarios.java</include>
-                    </includes>
                     <suiteXmlFiles>
-                        <!--<suiteXmlFile>src/test/resources/suites/${suiteXmlFile}</suiteXmlFile>-->
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>integration-test</goal>
-                            <goal>verify</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
+            <!--            <plugin>-->
+            <!--                <groupId>org.apache.maven.plugins</groupId>-->
+            <!--                <artifactId>maven-compiler-plugin</artifactId>-->
+            <!--                <version>3.3</version>-->
+            <!--                <configuration>-->
+            <!--                    <source>${java.version}</source>-->
+            <!--                    <target>${java.version}</target>-->
+            <!--                    <encoding>UTF-8</encoding>-->
+            <!--                </configuration>-->
+            <!--            </plugin>-->
+            <!--            <plugin>-->
+            <!--                <groupId>org.apache.maven.plugins</groupId>-->
+            <!--                <artifactId>maven-failsafe-plugin</artifactId>-->
+            <!--                <version>3.0.0</version>-->
+            <!--                <configuration>-->
+            <!--                    <includes>-->
+            <!--                        <include>**/Test*.java</include>-->
+            <!--                        <include>**/*Test.java</include>-->
+            <!--                        <include>**/*Tests.java</include>-->
+            <!--                        <include>**/*Scenario.java</include>-->
+            <!--                        <include>**/*Scenarios.java</include>-->
+            <!--                    </includes>-->
+            <!--                    <suiteXmlFiles>-->
+            <!--                        &lt;!&ndash;<suiteXmlFile>src/test/resources/suites/${suiteXmlFile}</suiteXmlFile>&ndash;&gt;-->
+            <!--                    </suiteXmlFiles>-->
+            <!--                </configuration>-->
+            <!--                <executions>-->
+            <!--                    <execution>-->
+            <!--                        <goals>-->
+            <!--                            <goal>integration-test</goal>-->
+            <!--                            <goal>verify</goal>-->
+            <!--                        </goals>-->
+            <!--                    </execution>-->
+            <!--                </executions>-->
+            <!--            </plugin>-->
 
-            <!-- Allure 2 reporting. Use mvn allure:report to generate the report -->
-            <plugin>
-                <groupId>io.qameta.allure</groupId>
-                <artifactId>allure-maven</artifactId>
-                <version>2.10.0</version>
-                <configuration>
-                    <!-- Keep version in sync with dependencies -->
-                    <reportVersion>${allure-testng-version}</reportVersion>
-                </configuration>
-            </plugin>
+            <!--            &lt;!&ndash; Allure 2 reporting. Use mvn allure:report to generate the report &ndash;&gt;-->
+            <!--            <plugin>-->
+            <!--                <groupId>io.qameta.allure</groupId>-->
+            <!--                <artifactId>allure-maven</artifactId>-->
+            <!--                <version>2.10.0</version>-->
+            <!--                <configuration>-->
+            <!--                    &lt;!&ndash; Keep version in sync with dependencies &ndash;&gt;-->
+            <!--                    <reportVersion>${allure-testng-version}</reportVersion>-->
+            <!--                </configuration>-->
+            <!--            </plugin>-->
         </plugins>
     </build>
 

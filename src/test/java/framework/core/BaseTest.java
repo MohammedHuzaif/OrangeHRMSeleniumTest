@@ -24,10 +24,6 @@ public class BaseTest {
         } else {
             driver = new ChromeDriver();
         }
-//        WebDriver driver = new ChromeDriver();
-
-//        ChromeDriverManager.chromedriver();
-//            driver = new ChromeDriver();
     }
 
     @AfterSuite
