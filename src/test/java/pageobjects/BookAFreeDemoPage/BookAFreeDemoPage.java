@@ -8,10 +8,10 @@ import org.openqa.selenium.support.FindBy;
 public class BookAFreeDemoPage extends BasePage {
 
     @FindBy(css = ".free-demo-page-slider-content h1") //Manage Your People and Operations in One Place
-    private WebElement demoPageHeader;
+    private WebElement demoPageHeaderTextBlock;
 
     @FindBy(css = ".free-demo-page-description h4") //See the endless posibilities with OrangeHRM.
-    private WebElement demoPageDescription;
+    private WebElement demoPageDescriptionTextBlock;
 
     @FindBy(css = "#Form_getForm_FullName")
     private WebElement fullNameTextInputBox;
@@ -49,6 +49,18 @@ public class BookAFreeDemoPage extends BasePage {
 
     public void clickSubmitButton(){
         submitButton.click();
+    }
+
+    public String getDemoPageHeaderTextBlock(){
+        return demoPageHeaderTextBlock.getText();
+    }
+
+    public String getDemoPageDescriptionTextBlock(){
+        return demoPageDescriptionTextBlock.getText();
+    }
+
+    public String getThankYouMessageTextBlock(){
+        return thankYouMessageTextBlock.getText();
     }
 
     public BookAFreeDemoPage(WebDriver driver) {
