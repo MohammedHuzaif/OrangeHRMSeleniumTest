@@ -20,6 +20,8 @@
         <log4j-version>2.14.1</log4j-version>
         <ashot-version>1.5.4</ashot-version>
         <extentreports-version>5.0.8</extentreports-version>
+        <maven-surefire-plugin-version>3.0.0-M5</maven-surefire-plugin-version>
+        <aspectj.version>1.9.6</aspectj.version>
     </properties>
 
     <dependencies>
@@ -77,66 +79,43 @@
             <artifactId>extentreports</artifactId>
             <version>5.0.8</version>
         </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>${allure-testng-version}</version>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.20</version>
+                <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <suiteXmlFiles>
-                        <suiteXmlFile>testng.xml</suiteXmlFile>
-                    </suiteXmlFiles>
+                    <source>11</source> <!--For JAVA 8 use 1.8-->
+                    <target>11</target> <!--For JAVA 8 use 1.8-->
                 </configuration>
             </plugin>
-            <!--            <plugin>-->
-            <!--                <groupId>org.apache.maven.plugins</groupId>-->
-            <!--                <artifactId>maven-compiler-plugin</artifactId>-->
-            <!--                <version>3.3</version>-->
-            <!--                <configuration>-->
-            <!--                    <source>${java.version}</source>-->
-            <!--                    <target>${java.version}</target>-->
-            <!--                    <encoding>UTF-8</encoding>-->
-            <!--                </configuration>-->
-            <!--            </plugin>-->
-            <!--            <plugin>-->
-            <!--                <groupId>org.apache.maven.plugins</groupId>-->
-            <!--                <artifactId>maven-failsafe-plugin</artifactId>-->
-            <!--                <version>3.0.0</version>-->
-            <!--                <configuration>-->
-            <!--                    <includes>-->
-            <!--                        <include>**/Test*.java</include>-->
-            <!--                        <include>**/*Test.java</include>-->
-            <!--                        <include>**/*Tests.java</include>-->
-            <!--                        <include>**/*Scenario.java</include>-->
-            <!--                        <include>**/*Scenarios.java</include>-->
-            <!--                    </includes>-->
-            <!--                    <suiteXmlFiles>-->
-            <!--                        &lt;!&ndash;<suiteXmlFile>src/test/resources/suites/${suiteXmlFile}</suiteXmlFile>&ndash;&gt;-->
-            <!--                    </suiteXmlFiles>-->
-            <!--                </configuration>-->
-            <!--                <executions>-->
-            <!--                    <execution>-->
-            <!--                        <goals>-->
-            <!--                            <goal>integration-test</goal>-->
-            <!--                            <goal>verify</goal>-->
-            <!--                        </goals>-->
-            <!--                    </execution>-->
-            <!--                </executions>-->
-            <!--            </plugin>-->
-
-            <!--            &lt;!&ndash; Allure 2 reporting. Use mvn allure:report to generate the report &ndash;&gt;-->
-            <!--            <plugin>-->
-            <!--                <groupId>io.qameta.allure</groupId>-->
-            <!--                <artifactId>allure-maven</artifactId>-->
-            <!--                <version>2.10.0</version>-->
-            <!--                <configuration>-->
-            <!--                    &lt;!&ndash; Keep version in sync with dependencies &ndash;&gt;-->
-            <!--                    <reportVersion>${allure-testng-version}</reportVersion>-->
-            <!--                </configuration>-->
-            <!--            </plugin>-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven-surefire-plugin-version}</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>TestNG.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                    <argLine>
+                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                    </argLine>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>${aspectj.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
         </plugins>
     </build>
 

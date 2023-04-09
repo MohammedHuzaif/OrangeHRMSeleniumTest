@@ -1,6 +1,7 @@
-package OrangeHRTest;
+package orangeHRTest;
 
 import framework.core.BaseTest;
+import io.qameta.allure.*;
 import org.testng.Assert;
 import pageobjects.BookAFreeDemoPage.BookAFreeDemoPage;
 import pageobjects.CookieBar.CookieBarPage;
@@ -8,11 +9,17 @@ import pageobjects.GoogleCaptcha.GoogleCaptcha;
 import pageobjects.homepage.OrangeHRHomepage;
 import org.testng.annotations.Test;
 import org.testng.annotations.Listeners;
+import utils.listeners.TestNGListener;
 
-@Listeners(listeners.TestNGListener.class)
+@Listeners(TestNGListener.class)
+@Epic("Regression Tests")
+@Feature("HomePage Tests")
 public class OrangeHRHomepageTests extends BaseTest {
 
-    @Test(priority = 1)
+    @Test(priority = 1, description = "Invalid Login Scenario with wrong username and password.")
+    @Severity(SeverityLevel.BLOCKER)
+    @Description("Test Description: Request Free Demo.")
+    @Story("Submit a request for free demo")
     public void requestFreeDemoTest() {
         getDriver().get("https://www.orangehrm.com/");
 
@@ -21,7 +28,7 @@ public class OrangeHRHomepageTests extends BaseTest {
         BookAFreeDemoPage bookAFreeDemoPage = new BookAFreeDemoPage(getDriver());
         GoogleCaptcha googleCaptcha = new GoogleCaptcha(getDriver());
 
-        cookieBarPage.clickAcceptCookiesButton();
+//        cookieBarPage.clickAcceptCookiesButton();
 
         orangeHRHomepage.clickBookAFreeDemoButton();
 

@@ -1,0 +1,1 @@
+{"uuid":"64fcc5f5-8949-42ae-9822-8a43069d3346","name":"N11 Test Suite","children":["2760b510-1ff7-4e02-b982-0d0435e218bc"],"befores":[{"name":"beforeSuite","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1681043039661,"stop":1681043040462}],"afters":[],"start":1681043039651,"stop":1681043048918}

@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class CookieBarPage extends BasePage {
-    @FindBy(css = ".optanon-allow-all.accept-cookies-button")
+    @FindBy(css = ".accept-cookie-container")
     private WebElement acceptCookiesButton;
 
     public void clickAcceptCookiesButton(){
