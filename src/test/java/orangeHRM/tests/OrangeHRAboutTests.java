@@ -8,6 +8,7 @@ import orangeHRM.pageobjects.HomePage.OrangeHRHomepage;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import utils.Utils;
 import utils.listeners.TestNGListener;
 
 @Listeners(TestNGListener.class)
@@ -31,11 +32,9 @@ public class OrangeHRAboutTests extends BaseTest {
         orangeHRHomepage.clickCompanyOption();
         orangeHRHomepage.clickAboutUsOption();
 
-        Assert.assertEquals(aboutUsPage.getPageHeader(),"About OrangeHRM");
-        Assert.assertEquals(aboutUsPage.getPageHeaderSubText(),"Defining the true meaning of HR for All.");
-        Assert.assertEquals(aboutUsPage.getDescriptionTextBlock(),"In 2005 when OrangeHRM started we had one mission, to make HR about the people. We wanted to remove any pain our fellow HR manager might be feeling in their job. Since then we have developed a world leading open source HR software that is trusted by over 5 million users.");
-        Assert.assertEquals(aboutUsPage.getPageSecondHeader(),"Our Product is Separated into Four Areas of HR");
-        Assert.assertEquals(aboutUsPage.getPageSecondHeaderSubText(),"With each section we have many products that help any HR team. It doesn’t matter if you’re a team of one or a team of 20. OrangeHRM serves any company size and unique business case. With the options of customization or out of the box, you can make OrangeHRM work the way you need it to.");
-
+        Assert.assertEquals(aboutUsPage.getPageHeader(), Utils.getPropertyValue("pageTexts.properties","AboutUSPageHeader"));
+        Assert.assertEquals(aboutUsPage.getPageHeaderSubText(),Utils.getPropertyValue("pageTexts.properties","AboutUsPageHeaderSubText"));
+        Assert.assertEquals(aboutUsPage.getDescriptionTextBlock(),Utils.getPropertyValue("pageTexts.properties","AboutUsDescriptionTextBlock"));
+        Assert.assertEquals(aboutUsPage.getPageSecondHeader(),Utils.getPropertyValue("pageTexts.properties","AboutUsageSecondHeader"));
     }
 }

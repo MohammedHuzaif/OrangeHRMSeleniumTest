@@ -19,9 +19,6 @@ public class AboutUsPage extends BasePage {
     @FindBy(xpath ="//section[3]//h2")
     private WebElement pageSecondHeader;
 
-    @FindBy(xpath ="//section[3]//p")
-    private WebElement pageSecondHeaderSubText;
-
     public String getPageHeader(){
         return pageHeader.getText();
     }
@@ -36,10 +33,6 @@ public class AboutUsPage extends BasePage {
 
     public String getPageSecondHeader(){
         return pageSecondHeader.getText();
-    }
-
-    public String getPageSecondHeaderSubText(){
-        return pageSecondHeaderSubText.getText();
     }
 
     public AboutUsPage(WebDriver driver) {
