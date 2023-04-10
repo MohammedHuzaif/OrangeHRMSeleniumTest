@@ -1,0 +1,79 @@
+[INFO ] 2023-04-10 10:00:50.415 [main] Log - I am in onStart method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 10:00:50.441 [main] Log - Test is starting: requestFreeDemoTest
+[INFO ] 2023-04-10 10:01:02.803 [main] Log - Test has failed: requestFreeDemoTest
+[INFO ] 2023-04-10 10:01:02.815 [main] Log - Test has failed: requestFreeDemoTest
+[INFO ] 2023-04-10 10:01:02.830 [main] Log - I am in onFinish method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 10:02:41.833 [main] Log - I am in onStart method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 10:02:41.862 [main] Log - Test is starting: requestFreeDemoTest
+[INFO ] 2023-04-10 10:02:54.613 [main] Log - Test has failed: requestFreeDemoTest
+[INFO ] 2023-04-10 10:02:54.619 [main] Log - Test has failed: requestFreeDemoTest
+[INFO ] 2023-04-10 10:02:54.628 [main] Log - I am in onFinish method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 22:07:30.227 [main] TestNGListener - I am in onStart method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 22:07:30.297 [main] TestNGListener - Test is starting: requestFreeDemoTest
+[INFO ] 2023-04-10 22:07:52.533 [main] TestNGListener - Test has failed: requestFreeDemoTest
+[INFO ] 2023-04-10 22:07:52.544 [main] TestNGListener - Test has failed: requestFreeDemoTest
+[INFO ] 2023-04-10 22:07:52.559 [main] TestNGListener - I am in onFinish method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 22:09:23.494 [main] TestNGListener - I am in onStart method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 22:09:23.538 [main] TestNGListener - Test is starting: requestFreeDemoTest
+[INFO ] 2023-04-10 22:10:04.752 [main] TestNGListener - Test has failed: requestFreeDemoTest
+[INFO ] 2023-04-10 22:10:04.764 [main] TestNGListener - Test has failed: requestFreeDemoTest
+[INFO ] 2023-04-10 22:10:04.785 [main] TestNGListener - I am in onFinish method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 22:32:31.658 [main] TestNGListener - I am in onStart method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 22:32:31.720 [main] TestNGListener - Test is starting: aboutUsTest
+[INFO ] 2023-04-10 22:32:51.122 [main] TestNGListener - Test is PASSED: aboutUsTest
+[INFO ] 2023-04-10 22:32:51.150 [main] TestNGListener - I am in onFinish method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 22:54:54.144 [main] TestNGListener - I am in onStart method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 22:54:54.183 [main] TestNGListener - Test is starting: aboutUsTest
+[INFO ] 2023-04-10 22:55:54.513 [main] TestNGListener - Test has failed: aboutUsTest
+[INFO ] 2023-04-10 22:55:54.537 [main] TestNGListener - Test has failed: aboutUsTest
+[INFO ] 2023-04-10 22:55:54.569 [main] TestNGListener - I am in onFinish method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 23:04:02.094 [main] TestNGListener - I am in onStart method OrangeHRMTest
+[INFO ] 2023-04-10 23:04:02.144 [main] TestNGListener - Test is starting: aboutUsTest
+[INFO ] 2023-04-10 23:04:28.037 [main] TestNGListener - Test has failed: aboutUsTest
+[INFO ] 2023-04-10 23:04:28.061 [main] TestNGListener - Test has failed: aboutUsTest
+[INFO ] 2023-04-10 23:04:28.093 [main] TestNGListener - I am in onFinish method OrangeHRMTest
+[INFO ] 2023-04-10 23:06:17.680 [main] TestNGListener - I am in onStart method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 23:06:17.707 [main] TestNGListener - Test is starting: aboutUsTest
+[INFO ] 2023-04-10 23:06:28.649 [main] TestNGListener - Test has failed: aboutUsTest
+[INFO ] 2023-04-10 23:06:28.657 [main] TestNGListener - Test has failed: aboutUsTest
+[INFO ] 2023-04-10 23:06:28.666 [main] TestNGListener - I am in onFinish method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 23:10:33.541 [main] TestNGListener - I am in onStart method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 23:10:33.567 [main] TestNGListener - Test is starting: aboutUsTest
+[INFO ] 2023-04-10 23:11:21.302 [main] TestNGListener - Test has failed: aboutUsTest
+[INFO ] 2023-04-10 23:11:21.308 [main] TestNGListener - Test has failed: aboutUsTest
+[INFO ] 2023-04-10 23:11:21.325 [main] TestNGListener - I am in onFinish method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 23:14:39.081 [main] TestNGListener - I am in onStart method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 23:14:39.106 [main] TestNGListener - Test is starting: aboutUsTest
+[INFO ] 2023-04-10 23:15:11.429 [main] TestNGListener - Test has failed: aboutUsTest
+[INFO ] 2023-04-10 23:15:11.436 [main] TestNGListener - Test has failed: aboutUsTest
+[INFO ] 2023-04-10 23:15:11.446 [main] TestNGListener - I am in onFinish method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 23:16:04.319 [main] TestNGListener - I am in onStart method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 23:16:04.346 [main] TestNGListener - Test is starting: aboutUsTest
+[INFO ] 2023-04-10 23:16:43.367 [main] TestNGListener - Test has failed: aboutUsTest
+[INFO ] 2023-04-10 23:16:43.373 [main] TestNGListener - Test has failed: aboutUsTest
+[INFO ] 2023-04-10 23:16:43.380 [main] TestNGListener - I am in onFinish method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 23:17:40.768 [main] TestNGListener - I am in onStart method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 23:17:40.795 [main] TestNGListener - Test is starting: aboutUsTest
+[INFO ] 2023-04-10 23:17:53.633 [main] TestNGListener - Test has failed: aboutUsTest
+[INFO ] 2023-04-10 23:17:53.639 [main] TestNGListener - Test has failed: aboutUsTest
+[INFO ] 2023-04-10 23:17:53.647 [main] TestNGListener - I am in onFinish method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 23:21:39.143 [main] TestNGListener - I am in onStart method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 23:21:39.168 [main] TestNGListener - Test is starting: aboutUsTest
+[INFO ] 2023-04-10 23:21:52.325 [main] TestNGListener - Test has failed: aboutUsTest
+[INFO ] 2023-04-10 23:21:52.332 [main] TestNGListener - Test has failed: aboutUsTest
+[INFO ] 2023-04-10 23:21:52.342 [main] TestNGListener - I am in onFinish method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 23:41:50.338 [main] TestNGListener - I am in onStart method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 23:41:50.372 [main] TestNGListener - Test is starting: aboutUsTest
+[INFO ] 2023-04-10 23:42:03.604 [main] TestNGListener - Test has failed: aboutUsTest
+[INFO ] 2023-04-10 23:42:03.619 [main] TestNGListener - Test has failed: aboutUsTest
+[INFO ] 2023-04-10 23:42:03.640 [main] TestNGListener - I am in onFinish method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 23:45:18.726 [main] TestNGListener - I am in onStart method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 23:45:18.750 [main] TestNGListener - Test is starting: aboutUsTest
+[INFO ] 2023-04-10 23:45:43.306 [main] TestNGListener - Test has failed: aboutUsTest
+[INFO ] 2023-04-10 23:45:43.322 [main] TestNGListener - Test has failed: aboutUsTest
+[INFO ] 2023-04-10 23:45:43.338 [main] TestNGListener - I am in onFinish method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 23:47:35.364 [main] TestNGListener - I am in onStart method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 23:47:35.389 [main] TestNGListener - Test is starting: aboutUsTest
+[INFO ] 2023-04-10 23:48:15.042 [main] TestNGListener - Test has failed: aboutUsTest
+[INFO ] 2023-04-10 23:48:15.046 [main] TestNGListener - Test has failed: aboutUsTest
+[INFO ] 2023-04-10 23:48:15.053 [main] TestNGListener - I am in onFinish method OrangeHRMSeleniumTest

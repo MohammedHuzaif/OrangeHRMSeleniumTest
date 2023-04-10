@@ -7,7 +7,8 @@
 
     <test name="OrangeHRMTest" thread-count="1">
         <classes>
-            <class name="orangeHRTest.OrangeHRHomepageTests"/>
+            <class name="orangeHRM.tests.OrangeHRAboutTests"/>
+            <class name="orangeHRM.tests.OrangeHRRequestDemoTests"/>
         </classes>
     </test>
 </suite>

@@ -35,7 +35,7 @@ public class TestNGListener extends BaseTest implements ITestListener {
 
 	@Override
 	public void onTestSuccess(ITestResult iTestResult) {
-		logger.info("Test is PASSED: " + iTestResult.getName());
+		logger.info("Test PASSED: " + iTestResult.getName());
 	}
 
 	@Override
