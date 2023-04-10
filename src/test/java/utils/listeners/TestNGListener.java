@@ -1,13 +1,11 @@
 package utils.listeners;
 
-import framework.BasePage;
 import framework.BaseTest;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -16,7 +14,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Date;
 
-public class TestNGListener extends BaseTest implements ITestListener  {
+public class TestNGListener extends BaseTest implements ITestListener {
 
 	private final Logger logger = LogManager.getLogger();
 
@@ -62,8 +60,5 @@ public class TestNGListener extends BaseTest implements ITestListener  {
 	@Override
 	public void onTestFailedButWithinSuccessPercentage(ITestResult iTestResult) {
 		logger.info("Test failed but it is in defined success ratio: " + iTestResult.getName());
-	}
-	public TestNGListener(WebDriver driver) {
-		super(driver);
 	}
 }
