@@ -1,4 +1,4 @@
-package pageobjects.GoogleCaptcha;
+package orangeHRM.pageobjects.GoogleCaptcha;
 
 import framework.BasePage;
 import org.openqa.selenium.WebDriver;

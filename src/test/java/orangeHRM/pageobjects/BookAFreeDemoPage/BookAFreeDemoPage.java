@@ -1,4 +1,4 @@
-package pageobjects.BookAFreeDemoPage;
+package orangeHRM.pageobjects.BookAFreeDemoPage;
 
 import framework.BasePage;
 import org.openqa.selenium.WebDriver;
