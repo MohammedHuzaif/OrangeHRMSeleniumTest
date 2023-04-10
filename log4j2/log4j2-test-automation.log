@@ -1,14 +1,10 @@
-[INFO ] 2023-04-09 20:24:07.471 [main] TestNGListener - requestFreeDemoTest test is failed.
-[INFO ] 2023-04-09 20:24:08.276 [main] TestNGListener - requestFreeDemoTest test is failed.
-[INFO ] 2023-04-09 20:28:08.504 [main] TestNGListener - requestFreeDemoTest test is failed.
-[INFO ] 2023-04-09 20:28:09.344 [main] TestNGListener - requestFreeDemoTest test is failed.
-[INFO ] 2023-04-09 20:34:43.256 [main] Log - I am in onStart method OrangeHRMTest
-[INFO ] 2023-04-09 20:34:43.275 [main] Log - requestFreeDemoTest test is starting.
-[INFO ] 2023-04-09 20:34:51.305 [main] Log - requestFreeDemoTest test is failed.
-[INFO ] 2023-04-09 20:34:52.082 [main] Log - requestFreeDemoTest test is failed.
-[INFO ] 2023-04-09 20:34:52.679 [main] Log - I am in onFinish method OrangeHRMTest
-[INFO ] 2023-04-09 20:46:06.844 [main] Log - I am in onStart method OrangeHRMTest
-[INFO ] 2023-04-09 20:46:06.872 [main] Log - requestFreeDemoTest test is starting.
-[INFO ] 2023-04-09 20:46:19.939 [main] Log - requestFreeDemoTest test is failed.
-[INFO ] 2023-04-09 20:46:20.482 [main] Log - requestFreeDemoTest test is failed.
-[INFO ] 2023-04-09 20:46:20.704 [main] Log - I am in onFinish method OrangeHRMTest
+[INFO ] 2023-04-10 10:00:50.415 [main] Log - I am in onStart method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 10:00:50.441 [main] Log - Test is starting: requestFreeDemoTest
+[INFO ] 2023-04-10 10:01:02.803 [main] Log - Test has failed: requestFreeDemoTest
+[INFO ] 2023-04-10 10:01:02.815 [main] Log - Test has failed: requestFreeDemoTest
+[INFO ] 2023-04-10 10:01:02.830 [main] Log - I am in onFinish method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 10:02:41.833 [main] Log - I am in onStart method OrangeHRMSeleniumTest
+[INFO ] 2023-04-10 10:02:41.862 [main] Log - Test is starting: requestFreeDemoTest
+[INFO ] 2023-04-10 10:02:54.613 [main] Log - Test has failed: requestFreeDemoTest
+[INFO ] 2023-04-10 10:02:54.619 [main] Log - Test has failed: requestFreeDemoTest
+[INFO ] 2023-04-10 10:02:54.628 [main] Log - I am in onFinish method OrangeHRMSeleniumTest

@@ -1,7 +1,8 @@
 package orangeHRTest;
 
-import framework.core.BaseTest;
+import framework.BaseTest;
 import io.qameta.allure.*;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import pageobjects.BookAFreeDemoPage.BookAFreeDemoPage;
 import pageobjects.CookieBar.CookieBarPage;

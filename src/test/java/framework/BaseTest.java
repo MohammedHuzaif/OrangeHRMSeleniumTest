@@ -1,4 +1,4 @@
-package framework.core;
+package framework;
 
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeSuite;
 
 public class BaseTest {
 
-    private WebDriver driver;
+    public WebDriver driver;
 
     @BeforeSuite
     public void beforeSuite() {
